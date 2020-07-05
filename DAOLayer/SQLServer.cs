@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-
+using System.Data;
+using System.Configuration;
 
 namespace DAOLayer
 {
@@ -9,7 +10,8 @@ namespace DAOLayer
     {
         public bool CreateUserLogin(string username, string password)
         {
-            SqlConnection sqlConnection = new SqlConnection(@"Data Source=MUM02L5446\SQLEXPRESS;Initial Catalog=mylocalDB;Persist Security Info=True;User ID=sa;Password=Password123");
+           string Connectionstring= ConfigurationSettings.AppSettings.Get("Connectionstring");
+            SqlConnection sqlConnection = new SqlConnection(Connectionstring);
             bool sucuss;
             try
             {
@@ -43,7 +45,9 @@ namespace DAOLayer
 
         public string UserLogin(string username, string password)
         {
-            SqlConnection sqlConnection = new SqlConnection(@"Data Source=MUM02L5446\SQLEXPRESS;Initial Catalog=mylocalDB;Persist Security Info=True;User ID=sa;Password=Password123");
+            string Connectionstring = ConfigurationSettings.AppSettings.Get("Connectionstring");
+            SqlConnection sqlConnection = new SqlConnection(Connectionstring);
+           // SqlConnection sqlConnection = new SqlConnection(@"Data Source=MUM02L5446\SQLEXPRESS;Initial Catalog=mylocalDB;Persist Security Info=True;User ID=sa;Password=Password123");
             string loggedInusername = string.Empty;
             try
             {
