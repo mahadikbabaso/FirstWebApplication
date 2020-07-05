@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FirstWebApplication
-{
-
-
-    public partial class MyDetails
-    {
-
+namespace FirstWebApplication {
+    
+    
+    public partial class MyDetails {
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -22,32 +20,32 @@ namespace FirstWebApplication
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
-        /// txtFirstName control.
+        /// txtUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
-
+        protected global::System.Web.UI.WebControls.TextBox txtUserName;
+        
         /// <summary>
-        /// txtLastName control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLastName;
-
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        
         /// <summary>
-        /// btnMyName control.
+        /// btnCreateLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMyName;
+        protected global::System.Web.UI.WebControls.Button btnCreateLogin;
     }
 }

@@ -1,15 +1,14 @@
 ﻿function valuecheck() {
-    var firstname = document.getElementById("txtFirstName").value;
-    var lastName = document.getElementById("txtLastName").value;
-    if (firstname == "") {
-        document.getElementById("lblResult").innerHTML = "Please enter first name";
+    var UserName = document.getElementById("txtUserName").value;
+    var Password = document.getElementById("txtPassword").value;
+    if (UserName.trim() == "") {
+        document.getElementById("lblResult").innerHTML = "Please enter use name";
 
         return false;
     }
-    if (lastName == "") {
-        document.getElementById("lblResult").innerHTML = "Please enter last name";
+    if (Password.trim() == "") {
+        document.getElementById("lblResult").innerHTML = "Please enter password";
 
         return false;
     }
-    document.getElementById("lblResult").innerHTML = "My name is : " + document.getElementById("txtFirstName").value + " " + document.getElementById("txtLastName").value;
 }
